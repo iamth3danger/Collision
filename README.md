@@ -1,5 +1,5 @@
 # 2D Collision Simulator
-![](../master/Images/2dCollision.gif)
+![](https://github.com/Colision/Images/collision.gif)
 
 
 In this project, I make a simulation of collisions of 2 dimensions with squares. I used SDL2 to animate and implement the game loop. SDL2 made both animating and rendering a relatively straight forward process. The hardest part of this was implementing the physics, using the write 
