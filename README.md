@@ -1,7 +1,7 @@
 # 2D Collision Simulator
 
 
-![](https://github.com/Collision/Images/collision.gif)
+![](https://github.com/iamth3danger/Collision/blob/master/Images/collision.gif)
 
 
 In this project, I make a simulation of collisions of 2 dimensions with squares. I used SDL2 to animate and implement the game loop. SDL2 made both animating and rendering a relatively straight forward process. The hardest part of this was implementing the physics, using the write 
