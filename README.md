@@ -5,8 +5,14 @@
 
 
 In this project, I make a simulation of collisions of 2 dimensions with squares. I used SDL2 to animate and implement the game loop. SDL2 made both animating and rendering a relatively straight forward process. The hardest part of this was implementing the physics, using the write 
-equations and making efficient collision detection. For the physics I worked with two equations. !((https://github.com/iamth3danger/Collision/blob/master/Images/2dCollision.svg)) This equation worked, but was hard to implement because of gamma. Gamma is the angle of collision and it was difficult to find a formula for it. I was 
-never sure that my collisions where correct and I ended up using it for too long. Also the equation would put out insane numbers if I was using atan instead of atan2 and I have no idea why. The better collision formula for this case is ![(../master/Images/anglessCollision.svg)](https://github.com/iamth3danger/Collision/blob/master/Images/anglessCollision.svg) 
+equations and making efficient collision detection. For the physics I worked with two equations. 
+!((https://github.com/iamth3danger/Collision/blob/master/Images/2dCollision.svg)) 
+
+This equation worked, but was hard to implement because of gamma. Gamma is the angle of collision and it was difficult to find a formula for it. I was 
+never sure that my collisions where correct and I ended up using it for too long. Also the equation would put out insane numbers if I was using atan instead of atan2 and I have no idea why. The better collision formula for this case is
+
+!(https://github.com/iamth3danger/Collision/blob/master/Images/anglessCollision.svg) 
+
 This equation has no angles and makes the code shorter and easier to read. There is no need for angles to be input or output so getting rid of them makes everything clearer.
 
 The other big part of this project was getting the collision detection correct. I was using AABB collision detection. It works by having one square check if the other square is above, below, to the left, and to the right of it. If the other square fails one of these checks the
